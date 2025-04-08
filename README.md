@@ -134,7 +134,6 @@ MIT License - See [LICENSE](LICENSE) for details.
 
 ```
 
----
 
-**Demo Tip**: Add a screenshot of your working prototype under the "Security Architecture" section! 🖼️  
-Replace placeholder image URL with actual screenshot path.
+
+
