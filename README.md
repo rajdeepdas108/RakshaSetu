@@ -1,4 +1,4 @@
-💊 RakshaSetu - Secure Medicine Verification System
+# 💊 RakshaSetu - Fake Medicine Detection System 
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Stars](https://img.shields.io/github/stars/rajdeepdas108/RakshaSetu)](https://github.com/rajdeepdas108/RakshaSetu/stargazers)
@@ -6,6 +6,20 @@
 [![GitHub Issues](https://img.shields.io/github/issues/rajdeepdas108/RakshaSetu)](https://github.com/rajdeepdas108/RakshaSetu/issues)
 
 A blockchain-inspired system to combat counterfeit medicines using QR codes and secure verification. Built for hackathons! 🔍✨
+
+## 📝 Overview  
+This project tackles counterfeit drugs by creating a secure verification system using QR codes and blockchain-like security. Designed for hackathons, it empowers consumers to instantly validate medicines via a web/mobile app while maintaining tamper-proof records. 
+
+---
+
+## 🔥 Features  
+- ✅ **QR Code Verification**: Scan medicine packages for real-time authenticity checks.  
+- 🔒 **Immutable Records**: SHA256 hashing mimics blockchain integrity.  
+- 📱 **Cross-Platform**: Works on any device with a camera.  
+- 🚨 **Tamper Alerts**: Flags mismatched hashes or duplicate entries.  
+- 📊 **Supply Chain Tracking**: Logs timestamps for distribution stages (beginner-friendly).  
+
+---
 
 ---
 
