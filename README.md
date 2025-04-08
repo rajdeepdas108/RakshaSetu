@@ -1,98 +1,126 @@
-# 💊 Fake Medicine Detection System Using QR & Blockchain
+💊 RakshaSetu - Secure Medicine Verification System
 
-## 📝 Overview  
-This project tackles counterfeit drugs by creating a secure verification system using QR codes and blockchain-like security. Designed for hackathons, it empowers consumers to instantly validate medicines via a web/mobile app while maintaining tamper-proof records.  
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![GitHub Stars](https://img.shields.io/github/stars/rajdeepdas108/RakshaSetu)](https://github.com/rajdeepdas108/RakshaSetu/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/rajdeepdas108/RakshaSetu)](https://github.com/rajdeepdas108/RakshaSetu/network)
+[![GitHub Issues](https://img.shields.io/github/issues/rajdeepdas108/RakshaSetu)](https://github.com/rajdeepdas108/RakshaSetu/issues)
 
----
-
-## 🔥 Features  
-- ✅ **QR Code Verification**: Scan medicine packages for real-time authenticity checks.  
-- 🔒 **Immutable Records**: SHA256 hashing mimics blockchain integrity.  
-- 📱 **Cross-Platform**: Works on any device with a camera.  
-- 🚨 **Tamper Alerts**: Flags mismatched hashes or duplicate entries.  
-- 📊 **Supply Chain Tracking**: Logs timestamps for distribution stages (beginner-friendly).  
+A blockchain-inspired system to combat counterfeit medicines using QR codes and secure verification. Built for hackathons! 🔍✨
 
 ---
 
-## 🛠 Technologies Used  
-- ⛓ **Database**: Firebase Firestore (NoSQL)  
-- 🔑 **Security**: SHA256 Hashing  
-- 📲 **QR Generation**: `qrcode.js` / `python-qrcode`  
-- 🔍 **QR Scanning**: `jsQR` Library  
-- 🖥 **Frontend**: HTML/CSS/JavaScript  
+## 🚀 Highlights
+- ✅ **Instant QR Verification**: Validate medicine authenticity in 2 seconds.
+- 🔗 **Tamper-Proof Records**: SHA256 hashing ensures data integrity.
+- 📱 **Zero App Installation**: Works directly via web browsers.
+- 🚨 **Duplicate Scan Detection**: Flags suspicious QR reuse.
+- 🏥 **Supply Chain Transparency**: Track medicine journey from factory to pharmacy.
 
 ---
 
-## 🚀 Installation  
-1. Clone the repository:  
-   ```sh  
-   git clone https://github.com/yourusername/fake-medicine-detector.git  
-   ```  
-2. Set up Firebase:  
-   - Create a project at [Firebase Console](https://console.firebase.google.com/)  
-   - Replace config in `src/firebase.js`  
-3. Install dependencies:  
-   ```sh  
-   npm install qrcode jsqr  # For JavaScript  
-   pip install python-qrcode # For Python (optional)  
-   ```  
+## 🛠️ Tech Stack
+| **Component**       | **Tools**                                                                 |
+|----------------------|---------------------------------------------------------------------------|
+| **Frontend**         | HTML, CSS, JavaScript                                                    |
+| **Database**         | Firebase Firestore                                                        |
+| **QR Generation**    | `qrcode.js`                                                               |
+| **Security**         | SHA256 Hashing                                                            |
+| **Hosting**          | Firebase Hosting                                                          |
 
 ---
 
-## 🎯 Usage  
-1. **Admin Registration**:  
-   - Open `/admin/index.html`  
-   - Enter medicine details (name, batch, expiry) → Generate QR.  
-2. **Consumer Verification**:  
-   - Scan QR via `/user/index.html` on any device.  
-   - Instant result: ✅ Valid (shows details) / ❌ Fake (alert).  
+## ⚙️ Installation
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/rajdeepdas108/RakshaSetu.git
+   ```
+2. Firebase Setup:
+   - Create project at [Firebase Console](https://console.firebase.google.com/)
+   - Update config in `src/firebase.js`
+3. Install dependencies:
+   ```bash
+   cd RakshaSetu && npm install qrcode jsqr
+   ```
 
 ---
 
-## 🔐 Security Measures  
-- 🔑 **SHA256 Hashing**: Unique IDs prevent data tampering.  
-- 🔒 **Firebase Rules**: Restrict write access to admins.  
-- 🚫 **QR Anti-Reuse**: Timestamps detect duplicate scans.  
+## 🎮 Usage
+### **Admin Panel** (Manufacturers)
+1. Visit `/admin/index.html`
+2. Register medicine:
+   - Enter name, batch, expiry date
+   - Generate & print QR code
+3. Data auto-saves to Firebase
+
+### **Consumers**
+1. Open `/user/index.html` on any device
+2. Scan medicine QR code
+3. Get instant result:
+   - ✅ **Valid**: Shows manufacturer details + expiry
+   - ❌ **Fake**: Red alert with warning siren
 
 ---
 
-## 🤝 Contributing  
-1. 🍴 Fork the repository.  
-2. 🌱 Create a branch (`feature-xyz`).  
-3. 💾 Commit changes.  
-4. 🚀 Push and submit a **Pull Request**.  
+## 🔐 Security Architecture
+![Security Flow](https://via.placeholder.com/800x400.png?text=QR+Hashing+%26+Firebase+Security+Flow)
+1. **Unique Hash Generation**: `SHA256(batch + expiry + secret_key)`
+2. **Firebase Rules**: Read-only for users, write-only for admins
+3. **QR Expiry**: Optional timestamp validation
 
 ---
 
-## 📜 License  
-MIT License - see [LICENSE](LICENSE).  
+## 🌟 Upcoming Features
+- 📍 **Geo-Fencing**: Detect regional counterfeit patterns
+- 📲 **WhatsApp Integration**: Scan via WhatsApp camera
+- 🔗 **Blockchain Migration**: Ethereum smart contracts
+- 📊 **Analytics Dashboard**: Track fake medicine reports
 
 ---
 
-## 📧 Contact  
-For questions, email [your.email@example.com](mailto:your.email@example.com).  
-
----
-
-## 📂 File Structure  
+## 📂 File Structure
 ```
-fake-medicine-detector/  
-├── public/  
-│   ├── index.html            # Landing page  
-│   └── styles.css           # Global CSS  
-├── src/  
-│   ├── admin/  
-│   │   ├── index.html       # Admin registration form  
-│   │   └── admin.js        # QR generation + Firebase upload  
-│   ├── user/  
-│   │   ├── index.html       # User scanner interface  
-│   │   └── scanner.js      # jsQR integration  
-│   └── firebase.js         # Firebase config  
-├── README.md  
-└── LICENSE  
-```  
-``` 
+RakshaSetu/
+├── public/                   # Static assets
+│   ├── index.html            # Landing page
+│   └── styles.css            # Global styling
+├── src/
+│   ├── admin/                # Manufacturer portal
+│   │   ├── index.html        # Medicine registration form
+│   │   └── admin.js          # QR generation logic
+│   ├── user/                 # Consumer interface
+│   │   ├── index.html        # QR scanner UI
+│   │   └── scanner.js        # jsQR integration
+│   └── firebase.js           # Firebase configuration
+├── README.md
+└── LICENSE
+```
 
 ---
 
-**Note**: Add screenshots/GIFs under the *Usage* section to showcase your prototype! 🎥
+## 🤝 Contribute
+1. 🍴 Fork the repository
+2. 🔨 Create a feature branch:
+   ```bash
+   git checkout -b feature-anti-counterfeit
+   ```
+3. 💻 Code + Test + Commit
+4. 🚀 Push and open a Pull Request
+
+---
+
+## 📜 License
+MIT License - See [LICENSE](LICENSE) for details.
+
+---
+
+## 📧 Contact
+**Rajdeep Das**  
+[![Email](https://img.shields.io/badge/Email-drajdeep00108%40gmail.com-red)](mailto:drajdeep00108@gmail.com)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-rajdeepdas108-blue)](https://linkedin.com/in/rajdeepdas108)
+
+```
+
+---
+
+**Demo Tip**: Add a screenshot of your working prototype under the "Security Architecture" section! 🖼️  
+Replace placeholder image URL with actual screenshot path.
