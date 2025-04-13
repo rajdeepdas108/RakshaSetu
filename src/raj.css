@@ -1,0 +1,80 @@
+body {
+    font-family: sans-serif;
+    background: linear-gradient(to right, #2949db, #b773fb, #0cb1d2, #ff7e5f, #feb47b, #2949db, #b773fb, #0cb1d2, #ff7e5f, #feb47b);
+    background-size: 400% 400%;
+    animation: gradientBackground 25s ease infinite;
+    color: white;
+    
+    
+    
+  }
+  
+  @keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+
+
+
+
+
+
+  /* Connect Wallet Button */
+button.connect-wallet {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button.connect-wallet:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(10, 10, 10);
+    
+    position: fixed; /* Ensures the footer stays at the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
