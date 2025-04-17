@@ -60,7 +60,7 @@ npm -v
 ```
 4. Go to the project folder, open terminal there and run following command to install required node_modules:-
 ```
-npm install ( npm i )
+npm i
 ```
 5. Compile contract source files. (Compilation and deployment can be done using truffle migrate):-
 ```
