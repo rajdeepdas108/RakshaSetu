@@ -48,38 +48,50 @@ This project tackles counterfeit drugs by creating a secure verification system 
 
 1. Clone the project
 ```
-git clone https://github.com/yogeshxd/FraudBlock
+git clone https://github.com/rajdeepdas108/RakshaSetu.git
 ```
-2. Go to the project folder, open terminal there and run following command to install required node_modules:-
+2. First step 1:-
 ```
-npm install
+nvm current 
 ```
-3. Compile contract source files. (Compilation and deployment can be done using truffle migrate):-
+3. First step 2:-
 ```
-truffle compile
+npm -v
 ```
-4. Open Ganache, (to setup local blockchain)
+4. Go to the project folder, open terminal there and run following command to install required node_modules:-
+```
+npm install ( npm i )
+```
+5. Compile contract source files. (Compilation and deployment can be done using truffle migrate):-
+```
+npm install truffle -g
+```
+
+6. Open Ganache, (to setup local blockchain)
     - crerate new workspace
     - add truffle-config.js  in truffle project 
     - change port to 7545 in server settings (same as port in truffle-config.js)
-5. In chrome, open metamask 
+
+7. In terminal, run following commands:-
+
+- Run migrations to deploy contracts.
+```
+truffle migrate
+```    
+8. In chrome, open metamask 
    - add new test network using  
         - NETWORK ID (i.e. 5777 ,from Ganache Server settings) 
         - RPC SERVER (i.e HTTP://127.0.0.1:7545 ,from Ganache Server settings)
         - CHAIN CODE (i.e. 1337)
    - import account using private key of any account from local blockchain available in Ganache.
-6. In terminal, run following commands:-
-- Run migrations to deploy contracts.
-```
-truffle migrate
-```
 
-- To start a server and it will open a homepage (index.html) file in the default browser.
+
+9. To start a server and it will open a homepage (index.html) file in the default browser.
 ```
 npm run dev 
 ``` 
-7. Login to metamask ,and connect the added account to local blockchain by clicking the 'Connect Wallet' button on the homescreen.
-8. Interact with website
+10. Login to metamask ,and connect the added account to local blockchain by clicking the 'Connect Wallet' button on the homescreen.
+11. Interact with website
 ---
 
 ## 🎮 Usage
