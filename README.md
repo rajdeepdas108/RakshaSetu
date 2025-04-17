@@ -78,10 +78,9 @@ bash
 ---
 
 ## 🔐 Security Architecture
-![Security Flow](https://via.placeholder.com/800x400.png?text=QR+Hashing+%26+Firebase+Security+Flow)
-1. **Unique Hash Generation**: SHA256(batch + expiry + secret_key)
-2. **Firebase Rules**: Read-only for users, write-only for admins
-3. **QR Expiry**: Optional timestamp validation
+
+1. **Firebase Rules**: Read-only for users, write-only for admins
+2. **QR Expiry**: Optional timestamp validation
 
 ---
 
@@ -91,26 +90,7 @@ bash
 - 🔗 **Blockchain Migration**: Ethereum smart contracts
 - 📊 **Analytics Dashboard**: Track fake medicine reports
 
----
 
-## 📂 File Structure
-RakshaSetu/
-├── public/                   # Static assets
-│   ├── index.html            # Landing page
-│   └── styles.css            # Global styling
-├── src/
-│   ├── admin/                # Manufacturer portal
-│   │   ├── index.html        # Medicine registration form
-│   │   └── admin.js          # QR generation logic
-│   ├── user/                 # Consumer interface
-│   │   ├── index.html        # QR scanner UI
-│   │   └── scanner.js        # jsQR integration
-│   └── firebase.js           # Firebase configuration
-├── README.md
-└── LICENSE
-
-
----
 
 ## 🤝 Contribute
 1. 🍴 Fork the repository
