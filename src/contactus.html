@@ -24,8 +24,8 @@
                     <div class="logo">RakshaSetu</div>
                     <div class="nav-links">
                         <a href="index.html" rel="noopener noreferrer" class="nav-link">Home</a>
-                        <a href="#" rel="noopener noreferrer" class="nav-link">About</a>
-                        Contact
+                        <a href="about.html" rel="noopener noreferrer" class="nav-link">About</a>
+                        <a href="contactus.html" rel="noopener noreferrer" class="nav-link">Contact</a>
                         <a href="SignUp_LogIn_Form.html" target="_blank" rel="noopener noreferrer"
                             class="nav-link">Login</a>
                     </div>
@@ -36,11 +36,16 @@
                     <h1>Contact Us</h1>
 
                     <div class="contact-info">
-                        <p><strong>Phone:</strong> +91 85973 32868</p>
-                        <p><strong>Email:</strong> drajdeep00108@gmail.com</p>
+                        Phone: +91 85973 32868<br>
+                        <p>Email: <a href="mailto:drajdeep00108@gmail.com">drajdeep00108@gmail.com</a><br>
+                            Address: Kolkata, West Bengal, India<br>
+                        </p>
                     </div>
 
-                    <form class="contact-form">
+                    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="315cca30-17de-4d61-bf6e-0900bb088276"> ">
+
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" placeholder="Your name" required />
 
